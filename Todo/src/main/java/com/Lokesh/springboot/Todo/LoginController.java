@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class LoginController {
     
-     @RequestMapping(value="login",method = RequestMethod.GET)
+    @RequestMapping(value="login",method = RequestMethod.GET)
     // @ResponseBody
     public String gotologin()
     {
         return "Login";
     }
-
+    
      @RequestMapping(value="login",method = RequestMethod.POST)
     // @ResponseBody
     public String gotowelcome(@RequestParam String name,@RequestParam String password,ModelMap model)
